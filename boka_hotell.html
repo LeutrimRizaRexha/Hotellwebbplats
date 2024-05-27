@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Välkommen till vårt unika hotell.">
+    <title>Boka</title>
+    <link rel="stylesheet" href="style_hotell.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Treehouse hotel</h1>
+            <img src="banner_hotell.webp" alt="Picture of forrest">
+        </header>
+        <div class="hammeny">
+            <div class="topnav">
+                <a href="boka_hotell.html" class="active">BOKA</a>
+                <div id="navbar">
+                    <a href="index_hotell.html">VÄLKOMMEN</a>
+                    <a href="hitta_hotell.html">HITTA</a>
+                    <a href="mat_hotell.html">MAT</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="desktopmeny">
+                <a href="index_hotell.html">VÄLKOMMEN</a>
+                <a href="boka_hotell.html">BOKA</a>
+                <a href="hitta_hotell.html">HITTA</a>
+                <a href="mat_hotell.html">MAT</a>
+            </div>
+        </div>
+        <main class="allbooking">
+            <div class="bookingdetails">
+                <div class="persondetails">
+                    <form action="#" method="post" id="subform">
+                        <fieldset>
+                            <legend>Bokning</legend>
+                            <div class="personalf">
+                                <label for="name">Förnamn</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="personalf">
+                                <label for="lastname">Efternamn</label>
+                                <input type="text" id="lastname">
+                            </div>
+                            <div class="personalf">
+                                <label for="cabin">Välj hytt</label>
+                                <select name="cabin" id="cabin">
+                                    <option value="">(select one)</option>
+                                    <option value="Lil">Lillen</option>
+                                    <option value="Tra">Träbron</option>
+                                    <option value="Gro">Grottan</option>
+                                    <option value="Mod">Moderna</option>
+                                </select>
+                            </div>
+                            <div class="personalf">
+                                <label for="residents">Antal pers (max 4)</label>
+                                <select name="residents" id="residents">
+                                    <option value="">(select one)</option>
+                                    <option value="1">Singel (1)</option>
+                                    <option value="Den">Duo/par (2)</option>
+                                    <option value="Nor">Tre (3)</option>
+                                    <option value="Fin">Fyra (4)</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="infotext">
+                    <div class="manuellbokning">
+                        <fieldset>
+                            <legend>Manuell bokning</legend>
+                            <div class="manutext">
+                                <p>Via mail: booking@treehouse.hotel</p>
+                                <p>Via telefon:012-345 67 89</p>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-button-container">
+                <button class="submit-button" type="submit" form="subform">Boka</button>
+            </div>
+        </main>
+        <footer>
+            <p>Treehouse Hotel</p>
+            <p>Blåbärsgatan 27, 123 45 Fruktstaden</p>
+            <p>012-345 67 89</p>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

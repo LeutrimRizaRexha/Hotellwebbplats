@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Välkommen till vårt unika hotell.">
+    <title>Hitta</title>
+    <link rel="stylesheet" href="style_hotell.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Treehouse hotel</h1>
+            <img src="banner_hotell.webp" alt="Picture of forrest">
+        </header>
+        <div class="hammeny">
+            <div class="topnav">
+                <a href="hitta_hotell.html" class="active">HITTA</a>
+                <div id="navbar">
+                    <a href="index_hotell.html">VÄLKOMMEN</a>
+                    <a href="boka_hotell.html">BOKA</a>
+                    <a href="mat_hotell.html">MAT</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="desktopmeny">
+                <a href="index_hotell.html">VÄLKOMMEN</a>
+                <a href="boka_hotell.html">BOKA</a>
+                <a href="hitta_hotell.html">HITTA</a>
+                <a href="mat_hotell.html">MAT</a>
+            </div>
+        </div>
+        <main>
+            <div class="map">
+                <img src="hitta_karta_hotell.webp" alt="karta">
+            </div>
+            <div class="infotext">
+                <p>Ligger i den vackra Norrbottensskogen lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                <p>Adress: Blåbärsgatan 27, 123 45 Fruktstaden</p>
+            </div>
+        </main>
+        <footer>
+            <p>Treehouse Hotel</p>
+            <p>Blåbärsgatan 27, 123 45 Fruktstaden</p>
+            <p>012-345 67 89</p>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
