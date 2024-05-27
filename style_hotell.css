@@ -208,7 +208,7 @@ footer p {
 
     .hammeny {
         width: 50vw;
-        display: active;
+        display: block;
     }
 
     .desktopmeny {
